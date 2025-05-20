@@ -1,0 +1,59 @@
+-- MDX sample
+
+-- get the total sales amount
+select [Measures].[Sales Amount] on columns
+from [AmazonProductCube];
+
+-- get the sales amount country wise
+
+select 
+   [Measures].[Sales Amount] on columns,
+   [Dim Location].[Country].[Country]  on rows
+from [AmazonProductCube];
+
+-- get the sales amount state wise
+
+select 
+   [Measures].[Sales Amount] on 0,
+   NON EMPTY [Dim Location].[State].[State] on 1
+from [AmazonProductCube];
+
+-- get the sales amount year wise
+select 
+   [Measures].[Sales Amount] on 0,
+   NON EMPTY [Sale Date].[Year No].[Year No] on 1
+from [AmazonProductCube];
+
+-- get only the sales amount for 2012
+select 
+      [Measures].[Sales Amount] on columns,
+      [Sale Date].[Year No].&[2012]  on rows
+from [AmazonProductCube]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

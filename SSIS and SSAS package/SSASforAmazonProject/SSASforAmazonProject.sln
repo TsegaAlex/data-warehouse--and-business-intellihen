@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "SSASforAmazonProject", "SSASforAmazonProject\SSASforAmazonProject.dwproj", "{16452BAE-A3BB-4553-9C62-F6DF1FAAC837}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16452BAE-A3BB-4553-9C62-F6DF1FAAC837}.Development|Default.ActiveCfg = Development
+		{16452BAE-A3BB-4553-9C62-F6DF1FAAC837}.Development|Default.Build.0 = Development
+		{16452BAE-A3BB-4553-9C62-F6DF1FAAC837}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
